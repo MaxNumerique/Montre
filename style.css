@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.horloge {
+    position: relative;
+    border: 2px solid white;
+    box-shadow: 3px 3px 10px rgb(255, 240, 240);
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aiguille {
+    position : absolute;
+    transform-origin: bottom center ;
+    bottom: 50%;
+    top: 20;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: black;
+    /* transform-origin: bottom center; */
+    border-radius: 4px;
+}
+
+.aiguilleHeures {
+    width: 7px;
+    height: 140px;
+    transform: rotate(0deg);
+}
+
+.aiguilleMinutes {
+    transform: rotate(90deg);
+    width: 5px;
+    height: 180px;
+}
+
+.aiguilleSecondes {
+    transform: rotate(180deg);
+    width: 5px;
+    height: 200px;
+    background-color: red;
+}
