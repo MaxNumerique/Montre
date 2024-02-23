@@ -1,9 +1,22 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Micro 5', sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
+
 body {
+    background-color: black;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    height: 100%;
+    
+}
+
+section {
     background-color: black;
     display: flex;
     justify-content: center;
@@ -11,17 +24,52 @@ body {
     height: 100vh;
 }
 
+
 .horloge {
     position: relative;
-    border: 2px solid white;
-    box-shadow: 3px 3px 10px rgb(255, 240, 240);
-    background-color: white;
+    border:  10px black solid;
+    box-shadow: 10px 10px 40px rgb(255, 240, 240);
+    background-color: rgb(73, 136, 71);
     width: 500px;
     height: 500px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.nombreHorloge {
+    position: absolute;
+    font-size: 80px;
+    color: rgb(0, 0, 0);
+    z-index: 3;
+}
+
+.douze {
+    top: 0;  
+}
+.trois {
+    right: 0;
+}
+.six {
+    bottom: -10px;
+}
+.neuf {
+    left: 5px;
+}
+
+.point_centre {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(36, 24, 0);
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+    margin: auto;
 }
 
 .aiguille {
@@ -35,6 +83,7 @@ body {
     background-color: black;
     /* transform-origin: bottom center; */
     border-radius: 4px;
+    border: solid 0.2em;
 }
 
 .aiguilleHeures {
@@ -54,4 +103,25 @@ body {
     width: 5px;
     height: 200px;
     background-color: red;
+}
+
+#horloge_numeriques {
+    width: 40%;
+    height: 30%;
+    color: white;
+    background-color: rgb(58, 151, 89);
+    border:  5px solid black;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.horloge_numerique_container {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
