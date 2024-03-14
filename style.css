@@ -28,7 +28,7 @@ section {
 .horloge {
     position: relative;
     border:  10px black solid;
-    box-shadow: 10px 10px 40px rgb(255, 240, 240);
+    box-shadow: 2px 0px 20px rgb(255, 240, 240);
     background-color: rgb(73, 136, 71);
     width: 500px;
     height: 500px;

@@ -52,10 +52,3 @@ for (let i = 1; i <= 100; i++) {
 }
 
 
-let nombre = "1";
-
-for (let i = 1; i < 50; i++) {
-    console.log(nombre);
-    i++;
-    nombre = nombre + i--;
-}
